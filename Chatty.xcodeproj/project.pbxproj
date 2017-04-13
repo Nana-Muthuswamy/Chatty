@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		02AC2BBA1DF2193015F23E0C /* Pods_Chatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68A0071162583E4513AE03D /* Pods_Chatty.framework */; };
 		392829B01E9F169A008663AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392829AF1E9F169A008663AE /* AppDelegate.swift */; };
-		392829B21E9F169A008663AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392829B11E9F169A008663AE /* ViewController.swift */; };
+		392829B21E9F169A008663AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392829B11E9F169A008663AE /* LoginViewController.swift */; };
 		392829B51E9F169A008663AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392829B31E9F169A008663AE /* Main.storyboard */; };
 		392829B71E9F169A008663AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392829B61E9F169A008663AE /* Assets.xcassets */; };
 		392829BA1E9F169A008663AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392829B81E9F169A008663AE /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		1CFCDA9219727860B482D25B /* Pods-Chatty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatty/Pods-Chatty.debug.xcconfig"; sourceTree = "<group>"; };
 		392829AC1E9F169A008663AE /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392829AF1E9F169A008663AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		392829B11E9F169A008663AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		392829B11E9F169A008663AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		392829B41E9F169A008663AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392829B61E9F169A008663AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392829B91E9F169A008663AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				392829AF1E9F169A008663AE /* AppDelegate.swift */,
-				392829B11E9F169A008663AE /* ViewController.swift */,
+				392829B11E9F169A008663AE /* LoginViewController.swift */,
 				392829B31E9F169A008663AE /* Main.storyboard */,
 				392829B61E9F169A008663AE /* Assets.xcassets */,
 				392829B81E9F169A008663AE /* LaunchScreen.storyboard */,
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392829B21E9F169A008663AE /* ViewController.swift in Sources */,
+				392829B21E9F169A008663AE /* LoginViewController.swift in Sources */,
 				392829B01E9F169A008663AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +376,7 @@
 				392829C01E9F169A008663AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
