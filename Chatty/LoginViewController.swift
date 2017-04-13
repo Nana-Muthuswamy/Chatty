@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var emailTextField: UITextField!
+    
+    @IBOutlet var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func didTapSignup(_ sender: Any) {
+        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            let user = PFUser()
+            user.username = email
+            user.email = email
+            user.password = password
+            user["phone"] = "3016789876"
+            
+            user.signUpInBackground(block: { (success: Bool, error: Error?) in
+                if error != nil {
+                    print("error: \(error)")
+                }
+                if success {
+                    print("sign up successful!!")
+                }
+            })
+        }
+    }
 
 }
 
