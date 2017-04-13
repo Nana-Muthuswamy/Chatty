@@ -34,12 +34,13 @@ class LoginViewController: UIViewController {
             user.password = password
             user["phone"] = "3016789876"
             
-            user.signUpInBackground(block: { (success: Bool, error: Error?) in
+            user.signUpInBackground(block: { [weak self] (success: Bool, error: Error?) in
                 if error != nil {
                     print("error: \(error)")
                 }
                 if success {
                     print("sign up successful!!")
+                    self?.toChatRoom()
                 }
             })
         }
@@ -49,14 +50,24 @@ class LoginViewController: UIViewController {
 
         if let username = emailTextField.text?.trimmingCharacters(in: .whitespaces), let password = passwordTextField.text?.trimmingCharacters(in: .whitespaces) {
 
-            PFUser.logInWithUsername(inBackground: username, password: password, block: { (user, error) in
+            PFUser.logInWithUsername(inBackground: username, password: password, block: { [weak self] (user, error) in
 
                 if user != nil {
                     print("Login successfull!")
+                    self?.toChatRoom()
                 } else {
                     print("Login Failed!")
                 }
             })
+        }
+    }
+    
+    private func toChatRoom() {
+        
+        
+        DispatchQueue.main.async {
+            
+            self.performSegue(withIdentifier: "showChatView", sender: self)
         }
     }
 

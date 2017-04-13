@@ -13,6 +13,7 @@
 		392829B51E9F169A008663AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392829B31E9F169A008663AE /* Main.storyboard */; };
 		392829B71E9F169A008663AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392829B61E9F169A008663AE /* Assets.xcassets */; };
 		392829BA1E9F169A008663AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392829B81E9F169A008663AE /* LaunchScreen.storyboard */; };
+		EB4FEEE61E9F21A100439F09 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FEEE51E9F21A100439F09 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		392829BB1E9F169A008663AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5721F75113332B77C82B9301 /* Pods-Chatty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatty/Pods-Chatty.release.xcconfig"; sourceTree = "<group>"; };
 		C68A0071162583E4513AE03D /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4FEEE51E9F21A100439F09 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				392829B61E9F169A008663AE /* Assets.xcassets */,
 				392829B81E9F169A008663AE /* LaunchScreen.storyboard */,
 				392829BB1E9F169A008663AE /* Info.plist */,
+				EB4FEEE51E9F21A100439F09 /* ChatViewController.swift */,
 			);
 			path = Chatty;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				392829B21E9F169A008663AE /* LoginViewController.swift in Sources */,
+				EB4FEEE61E9F21A100439F09 /* ChatViewController.swift in Sources */,
 				392829B01E9F169A008663AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
