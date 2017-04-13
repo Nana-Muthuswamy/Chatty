@@ -45,5 +45,20 @@ class LoginViewController: UIViewController {
         }
     }
 
+    @IBAction func login(_ sender: UIButton) {
+
+        if let username = emailTextField.text?.trimmingCharacters(in: .whitespaces), let password = passwordTextField.text?.trimmingCharacters(in: .whitespaces) {
+
+            PFUser.logInWithUsername(inBackground: username, password: password, block: { (user, error) in
+
+                if user != nil {
+                    print("Login successfull!")
+                } else {
+                    print("Login Failed!")
+                }
+            })
+        }
+    }
+
 }
 
